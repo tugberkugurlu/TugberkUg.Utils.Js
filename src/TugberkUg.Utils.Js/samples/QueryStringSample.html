@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="../tugberkUg.Utils.Js"></script>
+    <script>
+
+        window.onload = function () {
+
+            if (tu.queryString.isDefined("foo")) {
+
+                var output = document.getElementById("output");
+                output.innerHTML = tu.queryString.get("foo");
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>QueryString Utility</h1>
+    <p>
+        <a href="http://stackoverflow.com/questions/901115/get-query-string-values-in-javascript">Reference</a>
+    </p>
+    <a href="?foo=foo1&bar=foo2">Go</a>
+    <p id="output"></p>
+</body>
+</html>
